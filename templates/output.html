@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Aplikasi Prediksi Kesesuaian Air Untuk Konsumsi Manusia</title>
+        <style>
+            .image {
+                background-image: url("../static/images/water-a.jpg");
+                background-size: cover;
+            }
+            .headline{
+                color: #fff;
+                background-color: #FF8E00;
+                background: rgba(68, 68, 68, 0.8);
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .container form .input-details{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+            }
+            form .input-details .input-box{
+                margin-bottom: 15px;
+                width: calc(100% / 2 - 20px);
+            }
+            form .input-box span.details{
+                display: block;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .input-details .input-box input{
+                height: 45px;
+                width: 100%;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;
+                transition: all 0.3s ease;
+            }
+        </style>
+    </head>
+    <body
+        class="
+            flex flex-col
+            justify-between
+            item-center
+            p-8
+            min-h-screen
+            bg-blue-500
+            text-gray-800
+        "
+    >
+    <main class="p-14 rounded-lg image">
+        <div class="headline p-16">
+            <br>
+            <h1 class="text-3xl font-bold mb-8 text-center">
+                {{prediction_text }}
+            </h1>
+
+            <div class="mt-8">
+                <center>
+                    <table>
+                        <tr>
+                            <td>pH value</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ ph }}</td>
+                        </tr>
+                        <tr>
+                            <td>Hardness</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Hardness }}</td>
+                        </tr>
+                        <tr>
+                            <td>Solids</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Solids }}</td>
+                        </tr>
+                        <tr>
+                            <td>Chloramines</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Chloramines }}</td>
+                        </tr>
+                        <tr>
+                            <td>Sulfate</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Sulfate }}</td>
+                        </tr>
+                        <tr>
+                            <td>Conductivity</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Conductivity }}</td>
+                        </tr>
+                        <tr>
+                            <td>Organic carbon</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Solids }}</td>
+                        </tr>
+                        <tr>
+                            <td>Trihalomethanes</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Solids }}</td>
+                        </tr>
+                        <tr>
+                            <td>Turbidity</td>
+                            <td class="pr-5 pl-5">:</td>
+                            <td>{{ Turbidity }}</td>
+                        </tr>                        
+                    </table>
+                </center>
+            </div>
+
+            <a href="/" class="flex justify-center align-center mt-8 p-4 bg-blue-600 text-white rounded-md">
+                PREDIKSI LAGI ?
+            </a>
+        </div>
+    </main>
+    </body>
+</html>

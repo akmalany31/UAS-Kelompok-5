@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Aplikasi Prediksi Kesesuaian Air Untuk Konsumsi Manusia</title>
+        <style>
+            .image {
+                background-image: url("../static/images/water-a.jpg");
+                background-size: cover;
+            }
+            .headline{
+                color: #fff;
+                background-color: #FF8E00;
+                background: rgba(68, 68, 68, 0.8);
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .container form .input-details{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+            }
+            form .input-details .input-box{
+                margin-bottom: 15px;
+                width: calc(100% / 2 - 20px);
+            }
+            form .input-box span.details{
+                display: block;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .input-details .input-box input{
+                height: 45px;
+                width: 100%;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 15px;
+                border: 1px solid #ccc;
+                border-bottom-width: 2px;
+                transition: all 0.3s ease;
+            }
+        </style>
+    </head>
+    <body
+        class="
+            flex flex-col
+            justify-between
+            item-center
+            p-8
+            min-h-screen
+            bg-blue-500
+            text-gray-800
+        "
+    >
+        <main class="p-14 rounded-lg image">
+                <div class="headline p-16">
+                    <h1 class="text-3xl font-bold mb-8 text-center">
+                        Aplikasi Prediksi Kesesuaian Air Untuk Konsumsi Manusia
+                    </h1>
+                    <p>Air merupakan senyawa yang kompleks karena mengandung zat dan mineral. Namun, tubuh manusia tidak dapat mencerna semua zat dan mineral yang terkandung dalam air. Air juga mungkin dapat tercemar dengan bakteri dan zat mineral berbahaya bagi tubuh manusia. Hal ini dapat disebabkan oleh pencemaran sumber air atau pencemaran lingkungan sekitar sumber air. Dengan begitu pentingnya peran air dalam kehidupan sehingga dapat dikatakan bahwa kualitas air dapat dijadikan sebagai indikator tingkat kesehatan manusia. Pemantauan dan pengelolaan lingkungan sekitar sumber air sangat diperlukan agar dapat menghasilkan air bersih yang memenuhi standar kualitas air bersih dan memenuhi kebutuhan air untuk dikonsumsi manusia. Kualitas air yang memenuhi syarat kesehatan dapat diketahui dari zat atau mineral yang terkandung dalam air tersebut</p>
+                    <br><br>
+    
+                    <a href="#pred" class="flex justify-center align-center mt-8 p-4 bg-blue-600 text-white rounded-md">
+                        MULAI
+                    </a>
+                </div>
+        </main>
+        <br><br>
+
+        <main id='pred' class="container bg-white p-16 rounded-lg">
+            <h2 class="text-3xl font-bold mb-8">
+                Masukkan data hasil ukur air anda :
+            </h2>
+            <form action="{{ url_for('predict')}}" method="post" class="flex flex-col">
+                <div class="input-details">
+                    <div class="input-box">
+                      <span class="details">pH value</span>
+                      <input type="float" name="ph" placeholder="pH value, Min = 0, Max = 14" required="required" class="p-4 bg-gray-100 rounded-md" min="0" max="14"/>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Hardness</span>  
+                        <input type="float" name="Hardness" placeholder="Hardness, Min = 0, Max = 280" required="required" class="p-4 bg-gray-100 rounded-md" min="110" max="280"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Solids</span>
+                        <input type="float" name="Solids" placeholder="Solids, Min = 320, Max = 45000"  required="required" class="p-4 bg-gray-100 rounded-md" min="320" max="45000"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Chloramines</span>
+                        <input type="float" name="Chloramines" placeholder="Chloramines, Min = 0, Max = 12" required="required" class="p-4 bg-gray-100 rounded-md" min="0" max="12"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Sulfate</span>
+                        <input type="float" name="Sulfate" placeholder="Sulfate, Min = 260, Max = 410" required="required" class="p-4 bg-gray-100 rounded-md" min="260" max="410"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Conductivity</span>
+                        <input type="float" name="Conductivity" placeholder="Conductivity, Min = 200, Max = 655"  required="required" class="p-4 bg-gray-100 rounded-md" min="200" max="655"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Organic carbon</span>
+                        <input type="float" name="Organic_carbon" placeholder="Organic_carbon, Min = 0, Max = 25" required="required" class="p-4 bg-gray-100 rounded-md" min="0" max="25"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Trihalomethanes</span>
+                        <input type="float" name="Trihalomethanes" placeholder="Trihalomethanes, Min = 25, Max = 110"  required="required" class="p-4 bg-gray-100 rounded-md" min="25" max="110"/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Turbidity</span>
+                        <input type="float" name="Turbidity" placeholder="Turbidity, Min = 0, Max = 10"  required="required" class="p-4 bg-gray-100 rounded-md" min="0" max="10"/>
+                    </div>
+                </div>
+
+                <a class="flex justify-center align-center mt-8 p-4 bg-blue-600 text-white rounded-md"  target="_blank">
+                    <button type="submit" class="btn btn-primary btn-block btn-large">
+                        PREDIKSI SEKARANG
+                    </button>
+                </a>
+            </form>
+        </main>
+        <br><br>
+
+    </body>
+</html>
