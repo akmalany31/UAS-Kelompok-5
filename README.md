@@ -1,6 +1,6 @@
 # Aplikasi Prediksi Air Untuk Dikonsumsi Manusia
 
-============================================================================================
+===========================================================================
 
 Air merupakan senyawa yang kompleks karena mengandung zat dan mineral.
 Namun, tubuh manusia tidak dapat mencerna semua zat dan mineral yang
@@ -13,7 +13,7 @@ Pemantauan dan pengelolaan lingkungan sekitar sumber air sangat diperlukan agar
 dapat menghasilkan air bersih yang memenuhi standar kualitas air bersih dan
 memenuhi kebutuhan air untuk dikonsumsi manusia. Kualitas air yang memenuhi syarat kesehatan
 dapat diketahui dari zat atau mineral yang terkandung dalam air tersebut
-============================================================================================
+===========================================================================
 
 Sebelum menjalankan aplikasi lakukan install package pada
 cmd anaconda atau comand prompt :
@@ -33,7 +33,7 @@ pada saat me-running aplikasi
 Jika masih eror silahkan mencoba untuk membuka VS CODE dari anaconda Navigator
 untuk me-running aplikasi
 
-=============================================================================================
+===========================================================================
 
 Langkah-Langkah membuat model deployment
 
@@ -42,7 +42,7 @@ Langkah-Langkah membuat model deployment
 3. Anda dapat mencoba menjalankan server websitenya secara local pada PC/laptop dengan cara membuka terminal (Crtl+J),
    ketikan perintah (python app.py) tanpa kurung, lalu tekan Enter. Anda akan diberikan URL berupa http://localhost:5000/ atau http://127.0.0.1:5000/.
 
-=============================================================================================
+===========================================================================
 
 TPDM-1_KELOMPOK 5
 
