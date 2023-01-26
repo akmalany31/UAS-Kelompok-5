@@ -1,5 +1,7 @@
 # Aplikasi Prediksi Air Untuk Dikonsumsi Manusia
 
+============================================================================================
+
 Air merupakan senyawa yang kompleks karena mengandung zat dan mineral.
 Namun, tubuh manusia tidak dapat mencerna semua zat dan mineral yang
 terkandung dalam air. Air juga mungkin dapat tercemar dengan bakteri
@@ -41,6 +43,7 @@ Langkah-Langkah membuat model deployment
    ketikan perintah (python app.py) tanpa kurung, lalu tekan Enter. Anda akan diberikan URL berupa http://localhost:5000/ atau http://127.0.0.1:5000/.
 
 =============================================================================================
+
 TPDM-1_KELOMPOK 5
 
 1. Faris Fadhillah J (10519046)
@@ -49,4 +52,5 @@ TPDM-1_KELOMPOK 5
 4. Haidir (10519076)
 
 ============================================================================================
+
 Terima Kasih
